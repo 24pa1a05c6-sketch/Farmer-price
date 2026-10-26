@@ -1,0 +1,15 @@
+{
+  "name": "farmer-price",
+  "version": "1.0.0",
+  "description": "KisanSetu - Fullstack MERN Agricultural Intelligence Platform",
+  "private": true,
+  "scripts": {
+    "build": "npm install --prefix server && npm install --prefix client && npm run build --prefix client",
+    "start": "node server/src/index.js",
+    "seed": "node server/src/scripts/seed.js",
+    "test": "npm test --prefix server && npm test --prefix client"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
