@@ -4,7 +4,7 @@
   "description": "KisanSetu - Fullstack MERN Agricultural Intelligence Platform",
   "private": true,
   "scripts": {
-    "build": "npm install --prefix server && npm install --prefix client && npm run build --prefix client",
+    "build": "npm install --prefix server && npm install --include=dev --prefix client && npm run build --prefix client",
     "start": "node server/src/index.js",
     "seed": "node server/src/scripts/seed.js",
     "test": "npm test --prefix server && npm test --prefix client"
