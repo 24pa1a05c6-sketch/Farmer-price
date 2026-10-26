@@ -1,0 +1,9 @@
+state,district,market,commodity,variety,min_price,max_price,modal_price,arrival_date,unit
+Andhra Pradesh,Guntur,Guntur Mirchi Yard (APMC),Red Chilli (Dry),Teja (S17),17800,19600,18900,26/10/2026,INR/Quintal
+Andhra Pradesh,West Godavari,Tadepalligudem Mandi,Paddy (Dhan),BPT 5204 (Sona Masoori),2380,2560,2490,26/10/2026,INR/Quintal
+Andhra Pradesh,Kakinada,Kakinada APMC Market,Paddy (Dhan),BPT 5204 (Sona Masoori),2340,2510,2440,26/10/2026,INR/Quintal
+Andhra Pradesh,East Godavari,Rajahmundry Market Yard,Paddy (Dhan),MTU 1010,2210,2380,2310,26/10/2026,INR/Quintal
+Andhra Pradesh,Annamayya,Madanapalle Tomato Market,Tomato,Hybrid Madanapalle,2600,3400,3120,26/10/2026,INR/Quintal
+Andhra Pradesh,Kurnool,Adoni Cotton Market Yard,Cotton (Kapas),Long Staple (Bunny Bt),7100,7650,7420,26/10/2026,INR/Quintal
+Andhra Pradesh,NTR (Vijayawada),Vijayawada Gollapudi Mandi,Maize (Corn),Yellow Hybrid,2180,2390,2290,26/10/2026,INR/Quintal
+Andhra Pradesh,Kurnool,Kurnool Wholesale Mandi,Onion,Kurnool Red,2900,3650,3350,26/10/2026,INR/Quintal

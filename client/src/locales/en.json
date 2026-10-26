@@ -1,0 +1,37 @@
+{
+  "brand": "KISANSETU",
+  "tagline": "Know Your Price. Choose Your Market. Grow Your Profit.",
+  "heroHeadline": "YOUR HARVEST. YOUR MARKET. YOUR CHOICE.",
+  "heroSubtitle": "Understand market prices, compare selling opportunities, and estimate your earnings before you decide where to sell.",
+  "ctaExplore": "Explore Market Prices",
+  "ctaBestMarket": "Find My Best Market",
+  "nav": {
+    "overview": "Overview",
+    "explorer": "Crop Explorer",
+    "comparison": "Market Comparison",
+    "bestFinder": "Best Market Finder",
+    "analytics": "Price Analytics",
+    "alerts": "My Alerts",
+    "favourites": "Favourites",
+    "profile": "Profile",
+    "admin": "Admin Console"
+  },
+  "bestFinder": {
+    "title": "Best Market Finder \u2014 Net Earnings Calculator",
+    "subtitle": "Ranks eligible Andhra Pradesh mandis by estimated net earnings after deducting your transport and mandi expenses.",
+    "quantityLabel": "Harvest Quantity",
+    "unitLabel": "Quantity Unit",
+    "grossRevenue": "Gross Revenue",
+    "transportCost": "Transport Cost",
+    "otherExpenses": "Other Expenses (Hamali / Bags)",
+    "estimatedNet": "Estimated Net Earnings",
+    "disclaimer": "Estimate only, not a guarantee of actual income. Enter your actual transport rates."
+  },
+  "auth": {
+    "signIn": "Sign In",
+    "signUp": "Create Account",
+    "logout": "Log Out",
+    "welcome": "Welcome",
+    "farmerBadge": "Farmer"
+  }
+}

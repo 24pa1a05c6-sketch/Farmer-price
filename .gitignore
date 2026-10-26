@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+*/node_modules/
+package-lock.json.bak
+
+# Production builds
+dist/
+build/
+*/dist/
+*/build/
+
+# Environment files and credentials (CRITICAL: Do NOT commit secrets!)
+.env
+.env.*
+!.env.example
+*/.env
+*/.env.*
+!*/.env.example
+
+# Logs and debugging
+*.log
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Testing & Coverage
+coverage/
+playwright-report/
+test-results/
+.nyc_output/
+
+# Editor & OS files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
