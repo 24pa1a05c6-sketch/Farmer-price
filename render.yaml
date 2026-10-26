@@ -1,7 +1,9 @@
 services:
+  # Backend API Web Service (Express + MongoDB Atlas)
   - type: web
-    name: kisansetu-api
+    name: kisansetu-server
     env: node
+    plan: free
     region: singapore
     rootDir: server
     buildCommand: npm install
@@ -10,13 +12,30 @@ services:
     envVars:
       - key: NODE_ENV
         value: production
-      - key: PORT
-        value: 5000
       - key: MONGODB_URI
         sync: false
       - key: JWT_SECRET
         generateValue: true
       - key: CLIENT_ORIGIN
         sync: false
+      - key: COOKIE_SECURE
+        value: "true"
       - key: DATA_GOV_IN_API_KEY
+        sync: false
+
+  # Frontend Client Static Site (React + Vite SPA)
+  - type: web
+    name: kisansetu-client
+    env: static
+    plan: free
+    region: singapore
+    rootDir: client
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    envVars:
+      - key: VITE_API_BASE_URL
         sync: false

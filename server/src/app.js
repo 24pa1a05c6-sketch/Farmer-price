@@ -5,6 +5,13 @@ import cookieParser from 'cookie-parser';
 import rateLimit from 'express-rate-limit';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import fs from 'fs';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const clientDistPath = path.resolve(__dirname, '../../client/dist');
 
 import User from './models/User.js';
 import Crop from './models/Crop.js';
@@ -792,6 +799,17 @@ app.get('/api/dashboard/summary', async (req, res, next) => {
     next(err);
   }
 });
+
+// Serve static frontend assets if built
+if (fs.existsSync(clientDistPath)) {
+  app.use(express.static(clientDistPath));
+  app.get('*', (req, res, next) => {
+    if (req.path.startsWith('/api')) {
+      return next();
+    }
+    res.sendFile(path.join(clientDistPath, 'index.html'));
+  });
+}
 
 // Centralized Error Handler
 app.use((err, req, res, _next) => {
